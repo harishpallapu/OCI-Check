@@ -1,0 +1,8 @@
+---
+  - name: ping vm
+    hosts: all
+    become: false
+    gather_facts: fasle
+    tasks:  
+       - name: pingtest
+         win_ping:
